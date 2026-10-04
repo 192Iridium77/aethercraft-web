@@ -233,6 +233,7 @@ export default function Home() {
           src="/AetherCraft/AetherCraftCinematic.jpg"
           alt=""
           fill
+          loading="lazy"
           className="object-cover"
           sizes="100vw"
         />

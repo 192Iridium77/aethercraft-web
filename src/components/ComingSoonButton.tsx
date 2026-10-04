@@ -2,14 +2,16 @@ export function ComingSoonButton({ className = "" }: { className?: string }) {
   return (
     <button
       type="button"
-      className={`relative cursor-pointer overflow-hidden px-10 py-6 text-sm font-semibold md:px-16 md:py-8 md:text-lg ${className}`}
+      className={`relative grid w-[min(100%,18rem)] place-items-center border-0 bg-transparent p-0 text-sm font-semibold md:w-[22rem] md:text-lg ${className}`}
     >
-      <span
-        aria-hidden
-        className="absolute inset-0 bg-[url('/AetherCraft/ButtonSprite.png')] bg-cover bg-center bg-no-repeat"
-        style={{ filter: "brightness(0.8)" }}
+      <img
+        src="/AetherCraft/button.webp"
+        alt=""
+        width={720}
+        height={313}
+        className="col-start-1 row-start-1 h-auto w-full"
       />
-      <span className="relative z-10">Coming Soon</span>
+      <span className="col-start-1 row-start-1">Coming Soon</span>
     </button>
   );
 }

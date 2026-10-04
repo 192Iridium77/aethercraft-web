@@ -23,6 +23,7 @@ export function Hero() {
           width={905}
           height={816}
           priority
+          sizes="(min-width: 768px) 28rem, 20rem"
           className="h-auto w-full max-w-[min(100%,20rem)] md:max-w-[28rem]"
         />
         <h1 className="max-w-xl text-center text-sm text-balance sm:text-base md:max-w-4xl md:text-2xl">
