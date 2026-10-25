@@ -97,6 +97,48 @@ export default function Home() {
           </div>
           <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
             <Link
+              href="/blog/mauler"
+              className="group flex flex-col transition-opacity hover:opacity-90"
+            >
+              <div className="relative mb-4 aspect-[16/9] w-full overflow-hidden rounded-sm">
+                <Image
+                  src="/blog/mauler-reckoning.jpg"
+                  alt="Militia closing on a Mauler"
+                  fill
+                  className="object-cover transition-transform duration-300 group-hover:scale-105"
+                  sizes="(min-width: 768px) 33vw, 100vw"
+                />
+                <div className="absolute inset-0 flex items-center justify-center bg-black/30 opacity-0 transition-opacity group-hover:opacity-100">
+                  <div className="flex h-16 w-16 items-center justify-center rounded-full bg-white/20 backdrop-blur-sm md:h-20 md:w-20">
+                    <svg
+                      className="h-8 w-8 text-white md:h-10 md:w-10"
+                      fill="currentColor"
+                      viewBox="0 0 24 24"
+                      aria-hidden
+                    >
+                      <path d="M8 5v14l11-7z" />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div className="mb-2 flex items-center gap-2">
+                <span className="text-xs font-semibold text-accent md:text-sm">
+                  BLOG
+                </span>
+                <span className="text-white/40">|</span>
+                <span className="text-xs text-white/60 md:text-sm">
+                  25/10/2026
+                </span>
+              </div>
+              <h3 className="mb-2 text-base font-bold text-white transition-colors group-hover:text-accent md:text-xl">
+                Mauler
+              </h3>
+              <p className="text-xs text-white/70 md:text-sm">
+                Eight Militia attack-move in. Reckoning answers them in one
+                swing.
+              </p>
+            </Link>
+            <Link
               href="/hollowborn-arcanist"
               className="group flex flex-col transition-opacity hover:opacity-90"
             >
