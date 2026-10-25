@@ -8,7 +8,7 @@ The Unity board (`aethercraft`, max 10 open) is a different queue. Do not file s
 
 | Seq | Linear | Points | Status | Task |
 |-----|--------|--------|--------|------|
-| 1 | [MAT-133](https://linear.app/mattmartinau/issue/MAT-133) | 2 | Backlog | Publish the Mauler post |
+| 1 | [MAT-133](https://linear.app/mattmartinau/issue/MAT-133) | 2 | Done | Publish the Mauler post |
 | 2 | [MAT-134](https://linear.app/mattmartinau/issue/MAT-134) | 5 | Backlog | Try three backgrounds on the feature bands |
 | 3 | [MAT-135](https://linear.app/mattmartinau/issue/MAT-135) | 3 | Backlog | Replace the hero background |
 | 4 | [MAT-136](https://linear.app/mattmartinau/issue/MAT-136) | 3 | Backlog | Replace the bottom splash |
