@@ -84,6 +84,11 @@ export const races: Race[] = [
     ],
     gallery: [
       {
+        src: "/wiki/blender/units/mauler-alert.png",
+        alt: "Mauler studio render",
+        caption: "Mauler — Blender studio",
+      },
+      {
         src: "/wiki/screenshots/legion-buildings-placed.png",
         alt: "Legion buildings placed on Mission1",
         caption: "Legion camp on Mission1",

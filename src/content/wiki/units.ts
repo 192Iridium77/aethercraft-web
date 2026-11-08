@@ -84,6 +84,13 @@ export const units: Unit[] = [
     aetherCost: 250,
     tagline:
       "Slow demonic heavy — Reckoning turns absorbed damage into a sweeping arc.",
+    gallery: [
+      {
+        src: "/wiki/blender/units/mauler-alert.png",
+        alt: "Mauler studio render",
+        caption: "Blender studio — Alert clip",
+      },
+    ],
     howItWorks: [
       "Tier 5 heavy ground infantry. High HP and armour, high melee damage, short range, slow move.",
       "Reckoning fills as the Mauler takes damage. At threshold it is Primed; the next melee becomes a directional ~120° sweep, then Reckoning resets. No manual cast — enemies help decide when AoE is ready.",

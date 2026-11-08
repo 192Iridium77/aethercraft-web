@@ -39,6 +39,15 @@ export const demos: DemoEntry[] = [
     mediaAlt: "Artisan harvest still",
   },
   {
+    id: "mauler-alert",
+    kind: "animations",
+    title: "Mauler — alert / ready",
+    status: "still",
+    body: "Blender studio still from the Alert withSkin FBX. Replace with a Reckoning sweep clip when cut.",
+    mediaSrc: "/wiki/blender/units/mauler-alert.png",
+    mediaAlt: "Mauler alert studio render",
+  },
+  {
     id: "mauler-reckoning",
     kind: "animations",
     title: "Mauler — Reckoning sweep",
