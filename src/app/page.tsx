@@ -62,13 +62,25 @@ const races = [
   },
 ];
 
+function LampWash() {
+  return (
+    <div
+      aria-hidden
+      className="pointer-events-none absolute inset-0 flex items-center justify-center"
+    >
+      <div className="h-full w-full bg-[radial-gradient(ellipse_at_center,rgba(168,186,188,0.2)_0%,rgba(21,30,33,0.12)_58%,transparent_100%)] blur-2xl" />
+    </div>
+  );
+}
+
 export default function Home() {
   return (
     <div className="flex min-h-screen flex-col">
       <Hero />
 
-      <SectionFrame className="bg-gradient-to-b from-[#0c2433] to-[#01080a] px-8 py-20">
-        <div className="container mx-auto flex flex-1 flex-col justify-center">
+      <SectionFrame className="overflow-hidden bg-[#151e21] px-8 py-20">
+        <LampWash />
+        <div className="container relative z-10 mx-auto flex flex-1 flex-col justify-center">
           <h2 className="mb-24 text-left text-4xl md:text-8xl">FEATURES</h2>
           <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
             {features.map((feature) => (
@@ -90,8 +102,8 @@ export default function Home() {
         </div>
       </SectionFrame>
 
-      <SectionFrame className="bg-gradient-to-b from-[#0c2433] to-[#01080a] px-8 py-20">
-        <div className="container mx-auto flex flex-1 flex-col justify-center">
+      <SectionFrame className="bg-[#080d0f] px-8 py-20">
+        <div className="container relative z-10 mx-auto flex flex-1 flex-col justify-center">
           <div className="mb-12 flex items-center justify-between">
             <h2 className="text-left text-4xl md:text-8xl">NEWS</h2>
           </div>
@@ -208,7 +220,7 @@ export default function Home() {
                 className="object-cover"
                 sizes="(min-width: 768px) 33vw, 100vw"
               />
-              <div className="absolute inset-0 z-0 bg-black/50" />
+              <div className="absolute inset-0 z-0 bg-black/72" />
               <div className="relative z-10 flex h-full w-full flex-col items-center justify-center">
                 <Image
                   src={race.portrait}
@@ -229,8 +241,9 @@ export default function Home() {
         </div>
       </SectionFrame>
 
-      <SectionFrame className="bg-gradient-to-b from-[#0c2433] to-[#01080a] px-8 py-20">
-        <div className="container mx-auto flex flex-1 flex-col justify-center">
+      <SectionFrame className="overflow-hidden bg-[#151e21] px-8 py-20">
+        <LampWash />
+        <div className="container relative z-10 mx-auto flex flex-1 flex-col justify-center">
           <div className="grid grid-cols-1 gap-12 md:grid-cols-4">
             <h2 className="text-left text-4xl md:col-span-2 md:text-8xl">
               GALLERY
@@ -279,7 +292,7 @@ export default function Home() {
           className="object-cover"
           sizes="100vw"
         />
-        <div className="absolute inset-0 z-[1] bg-black/40" />
+        <div className="absolute inset-0 z-[1] bg-black/[0.59]" />
         <div className="relative z-10 flex flex-col items-center justify-center gap-8 px-8 text-center">
           <h2 className="font-serif text-4xl md:text-7xl">READY, CHANELLER?</h2>
           <p className="max-w-3xl text-base md:text-xl">

@@ -4,11 +4,12 @@ import { SiteFooter } from "@/components/SiteFooter";
 
 const title = "Mauler — AetherCraft";
 const description =
-  "Eight Militia attack-move in. Reckoning answers them in one swing.";
+  "Eight Militia attack-move in. Reckoning answers them in one swing — a short AetherCraft combat clip.";
 const path = "/blog/mauler";
 const published = "2026-10-25";
 const ordersPoster = "/blog/mauler-orders.jpg";
 const reckoningPoster = "/blog/mauler-reckoning.jpg";
+const ogImage = "/blog/mauler-og.jpg";
 
 export const metadata: Metadata = {
   title,
@@ -21,11 +22,12 @@ export const metadata: Metadata = {
     siteName: "AetherCraft",
     type: "article",
     publishedTime: published,
+    modifiedTime: published,
     images: [
       {
-        url: reckoningPoster,
-        width: 1280,
-        height: 720,
+        url: ogImage,
+        width: 1200,
+        height: 630,
         alt: "Militia closing on a Mauler",
       },
     ],
@@ -34,7 +36,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title,
     description,
-    images: [reckoningPoster],
+    images: [ogImage],
   },
 };
 
@@ -45,7 +47,7 @@ const jsonLd = {
   description,
   datePublished: published,
   dateModified: published,
-  image: [`https://www.aethercraft.online${reckoningPoster}`],
+  image: [`https://www.aethercraft.online${ogImage}`],
   mainEntityOfPage: `https://www.aethercraft.online${path}`,
   author: { "@type": "Organization", name: "AetherCraft" },
   publisher: { "@type": "Organization", name: "AetherCraft" },
@@ -73,7 +75,7 @@ const jsonLd = {
 
 export default function MaulerPostPage() {
   return (
-    <div className="flex min-h-dvh flex-col bg-[#01080a]">
+    <div className="flex min-h-dvh flex-col bg-[#151e21]">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}

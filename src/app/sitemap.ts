@@ -12,9 +12,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${base}/hollowborn-arcanist`,
-      lastModified: "2025-12-19",
-      changeFrequency: "yearly",
-      priority: 0.6,
+      lastModified: "2026-10-26",
+      changeFrequency: "monthly",
+      priority: 0.8,
     },
   ];
 }

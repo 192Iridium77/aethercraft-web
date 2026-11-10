@@ -39,3 +39,9 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Local ticket pipeline (phase notes and timings)
+.pipeline/
+
+# Static export / local Go build output
+/dist/

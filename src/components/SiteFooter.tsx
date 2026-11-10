@@ -2,17 +2,8 @@ import Image from "next/image";
 
 export function SiteFooter() {
   return (
-    <footer className="relative flex w-full flex-col items-center justify-center bg-[#030b0e] px-8">
-      <div className="flex items-center justify-center">
-        <Image
-          src="/AetherCraft/DividerTop.png"
-          alt=""
-          width={400}
-          height={43}
-          className="h-auto w-48 md:w-[320px]"
-        />
-      </div>
-      <div className="container mx-auto my-20 grid w-full grid-cols-1 items-center gap-8 md:grid-cols-3">
+    <footer className="relative flex w-full flex-col items-center justify-center bg-[#080d0f] px-8 py-16">
+      <div className="container mx-auto grid w-full grid-cols-1 items-center gap-8 md:grid-cols-3">
         <p className="text-center text-sm md:text-left md:text-base">
           HYPERLEXAI 2025
         </p>
@@ -20,8 +11,8 @@ export function SiteFooter() {
           <Image
             src="/AetherCraft/SimpleLogo.png"
             alt="AetherCraft"
-            width={300}
-            height={80}
+            width={1584}
+            height={672}
             className="h-auto w-48 object-contain md:w-[300px]"
           />
         </div>
